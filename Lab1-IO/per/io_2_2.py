@@ -8,7 +8,7 @@ def tail(file, lines):
             line = fp.readline()
             buffer.append(line)
 
-            if len(buffer) > lines:
+            if len(buffer) > (lines + 1):
                 buffer.pop(0)
 
             if not line:
@@ -22,7 +22,7 @@ def tail(file, lines):
 
 if __name__ == '__main__':
     n_lines = 10
-    file_names = [sys.argv[i] for i in range(1, len(sys.argv))]
+    file_names = sys.argv[1:]
 
     for file_name in file_names:
         tail(file_name, n_lines)
