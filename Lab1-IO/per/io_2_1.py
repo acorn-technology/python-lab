@@ -10,7 +10,7 @@ if __name__ == '__main__':
             line = fp.readline()
             buffer.append(line)
 
-            if len(buffer) > n_lines:
+            if len(buffer) > (n_lines + 1):
                 buffer.pop(0)
 
             if not line:
