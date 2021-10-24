@@ -1,5 +1,6 @@
 # IDE folders
 .vscode
+.idea
 
 # Cache
 .pytest_cache
