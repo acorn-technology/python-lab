@@ -1,0 +1,11 @@
+Say “Systems Development” and our pulse speeds up
+We’re specialists in systems development and we work with a wide range of suppliers and products. Our clients include companies that develop products and produce services, representing a number of sectors and industries. We develop everything from operational support systems and service platforms that handle hundreds of thousands of users and huge quantities of data, to apps and web solutions. Thanks to our expertise we often adopt the role of architect or lead developer and deliver solutions that maintain high quality over a long period of time.
+
+Back-end
+We build systems primarily in Java and .NET. These are often systems with high requirements on performance that handle large quantities of data. The focus is on building robust architectures and on finding the simplest solutions to complex problems. We believe in a test-oriented approach with continuous deliveries of usable code and we are happy to focus on MVP to maximize customer benefit and minimize post-delivery issues.
+
+Front-end
+We love technology and have considerable experience in modern user interface development. You get access to competence that creates front-end solutions which function for the majority of units, irrespective of what the back-end interfaces are like. We build with Open Source frameworks, contribute to the development of various Open Source projects and believe that ‘Sharing is Caring’.
+
+Mobility
+Today most people expect to have full access to information, products and services wherever they happen to be. Our work in the sphere of mobility is based on expertise in app and web development linked with various types of back-end solutions. We’ve only seen the beginning of this change process. Acorn is available to develop solutions that help you exploit all the new business opportunities that present themselves.
