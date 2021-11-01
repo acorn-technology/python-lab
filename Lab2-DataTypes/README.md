@@ -41,7 +41,7 @@ Number of words: 290
 
 ## 1.2 Word count
 
-Count the number of occurences for each word in the file sorted by the number of occurences.
+Count the number of occurences for each word in the file and print them sorted by the number of occurences.
 
 Example output:
 ```
@@ -73,11 +73,11 @@ Expand the word search to support regular expressions as input
 
 # 2 Triangles
 
-_Note:_ This task has been stolen from [Advent of code](https://adventofcode.com), but don't go looking for solutions just yet ;)
+_Note:_ This task has been stolen from [Advent of code](https://adventofcode.com), but don't go googling for solutions just yet ;)
 
 ## 2.1 Part one
 
-The file `triangle-input.txt` contain specifications of triangles. Each line contains the lenght of each of the three sides. Although something has gone worng, some are not valid triangles.
+The file `triangle-input.txt` contain specifications of triangles. Each line contains the lenght of each of the three sides. Although something has gone wrong, some are not valid triangles.
 
 Check how many of the triangles follow the basic rule that the sum of any two sides, must be larger than the remaining side?
 
