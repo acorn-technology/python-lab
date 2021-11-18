@@ -41,7 +41,7 @@ When you run the file you should get the following error:
 ImportError: attempted relative import with no known parent package
 ```
 
-This gives us an opportunity to try to anderstand an error that might not be easy to enterprit when first encountered, but you are likely to encounter in some form. It will however hopefully become clear from the following example. Which also gives us a little more insight into module.
+This gives us an opportunity to try to understand an error that might not be easy to interpret when first encountered. It will however hopefully become clear from the following example. Which also gives us a little more insight into Python modules.
 
 The folder `import_example` contains three files
 
@@ -74,7 +74,7 @@ c_name = __name__
 In the following structure
 
 ```
-`a.py`
+a.py
 foo
   b.py
   bar
@@ -96,9 +96,9 @@ b: __main__
 c: bar.c
 ```
 
-Here we see that the module name of relative modules depends on where it is loaded from (as well as the `__main__` naming of the script that is run).
+Here we see that the module name of relative modules depends on where it is loaded from (as well as the script that is run is named `__main__`).
 
-If you in c.py add in the lines
+If you in c.py add the lines
 
 ```python
 from ..b import b_name
@@ -143,7 +143,7 @@ All work in this part will be performed in the `game` module we created before.
 
 ### 2.1 Subclass
 
-Create a class `Ant` that inherits from `Bug` in the `bug` module. Make sure it is possible to instanciate it.
+Create a class `Ant` that inherits from `Bug` in the `bug` module. Make sure it is possible to instantiate it.
 
 Add a method called `move` that makes the ant take one step forward using `Bug._step()`. Printing the y-position before and after.
 
