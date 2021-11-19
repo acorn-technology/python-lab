@@ -15,7 +15,7 @@ def shout_name():
     shout(__name__)
 ```
 
-Create a second file called `io_usage.py` that imports `shout` from `io_utils.py` and uses it to print the `__name__` variable.
+Create a second file called `io_usage.py` that imports `shout` from `io_utils.py` and uses it to print the `__name__` variable (e.g. `io_utils.shout(__name__)`).
 
 _Note:_ Do you know how to import it so the usage becomes `io_utils.shout(...)` or just `shout(...)` or perhaps `oi.shout(...)`
 
