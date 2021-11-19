@@ -25,7 +25,7 @@ The output when running `io_usage.py` will hopefully be
 __MAIN__
 ```
 
-The reason for this is that the `__name__` valiable  will contain the name of the module where the code is located or if the file is run a script, it will contain the string `__main__`.
+The reason for this is that the `__name__` variable  will contain the name of the module where the code is located or if the file is run a script, it will contain the string `__main__`.
 
 ### 1.2 Use shout_name
 
@@ -134,8 +134,8 @@ Here we have a relative import from the file that we are running (i.e `__name__ 
 So how do we fix this?
 
 1. We could in another scenario modify our folder structure so it better fits Python's import behaviour. _This is very likely what you would like to do in a real scenario._
-2. We could add the `Lab3-Modules` as a path to be search for modules (either by modifying environment variable `PYTHONPATH` or in runtime by modifying [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path)). _This is generaly not a very good idea._
-3. We can instead of running a script tell python to run a module (e.g. `python -m Lab3-Modules.Mattias.game.py`). _This is what we will do this time._
+2. We could add the `Lab3-Modules` as a path to be search for modules (either by modifying environment variable `PYTHONPATH` or in runtime by modifying [`sys.path`](https://docs.python.org/3/library/sys.html#sys.path)). _This is generally not a very good idea._
+3. Instead of running a script, we can tell Python to run a module (e.g. `python -m Lab3-Modules.Mattias.game.py`). _This is what we will do this time._
 
 ## 2 Classes
 
