@@ -5,3 +5,6 @@
 # Cache
 .pytest_cache
 __pycache__
+
+# virtual envs
+.venv
