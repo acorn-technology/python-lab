@@ -50,3 +50,46 @@ Using the API, fetch the station that is closest to `lat = 57.7056108, long = 11
 ### 1.2
 
 Print information about the 10 upcoming departures from the closest station.
+
+## 2 Server
+
+Python generally have multiple ways of doing things. Setting up a web server is no exception. There are A LOT of choices when selecting sever, documentation generation, etc. In this lab we will use: flask, flask_restx and marshmallow_dataclass.
+
+flask_restx simplifies creation of REST APIs. An API can be split into multiple namespaces
+
+```Python
+foo_api = Namespace('api/foo', description='Example namespace')
+```
+
+Models are created in the namespace for use with routes further on
+
+```Python
+foo_request = foo_api.model(
+    'FooRequest',
+    {
+        'bar': fields.String(required=True, description="Who knows", help="Unhelpful"),
+        'biz': fields.Integer(required=False)
+    })
+```
+
+Resources are then added to the namespace with routes
+
+```Python
+from flask_restx import Namespace, Resource, fields
+
+@foo_api.route('')
+class Foo(Resource):
+    @foo_api.expect(foo_request)
+    @foo_api.doc(responses={200: 'OK', 400: 'Invalid Argument', 500: 'Bad state'})
+    def post(self):
+        print(request.json)
+        return 'baz', 200
+```
+
+This resource will process POST requests to /api/foo and expect a request body matching the model.
+
+### 2.1
+
+Copy the files `main.py` and `start.sh` pr `start.ps1`. Create a file called `count.py` that export a namespace `count_api`. Add two endpoints to this namespace, one that allows you to add/subtract to a number kept in memory, and one that returns that number.
+
+The endpoint performing arithmetic should take the arguments in the request body and use marshmallow_dataclass to parse the data.
