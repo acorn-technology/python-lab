@@ -78,6 +78,8 @@ electricity_frame.plot()
 plt.show()
 ```
 
+If you want to verify your result, check the `plot.png` file.
+
 ## 2 Visualizing
 
 ### 2.1 Basic Plotting
@@ -86,12 +88,14 @@ The [Matplotlib example page](https://matplotlib.org/stable/plot_types/index.htm
 
 ### 2.2 Plotting the price
 
-Pick an idea for visualizing our price data:
+Visualize something with the electricity data. Pick from the list or think of an interesting idea!
 
-- (Easy) Show the data in a single plot or multiple subplots
+- (Easy) Show the different areas in subplots
+- (Medium) Plot the difference (try both absolut and relative) between any two areas over time
 - Plot the distribution of the prices in histograms, can we draw any conclusions?
-- A color coded Scatter plot might show interesting correlations
-- Any of your own ideas
+- A scatter plot of price / hour of day could show some correlations
+
+---
 
 ## 3 Bonus: Jupyter Notebooks
 
@@ -99,4 +103,4 @@ A common tool used in exploratory data analysis is [Jupyter Notebooks](https://j
 
 ## 4 Bonus: What about numpy?
 
-Pandas is built on Numpy, which offers a great Mathematics library for (surprisingly) high-performance calculations. It has seamless integrations to Pandas, Matplotlib, SkLearn and many other libraries. 
+Pandas is built on Numpy, which offers a great Mathematics library for (surprisingly) high-performance calculations. It has seamless integrations to Pandas, Matplotlib, SkLearn and many other libraries.
